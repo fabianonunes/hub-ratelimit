@@ -25,7 +25,7 @@ $ docker run --rm fabianonunes/hub-ratelimit usuario:senha
 < RateLimit-Remaining: 196;w=21600
 ```
 
-Caso todo o limite tenha sido consumido pra respectiva janela de tempo, a seguinte mensagem será exibida:
+Caso todo o limite tenha sido consumido dentro da respectiva janela de tempo, a seguinte mensagem será exibida:
 
 ```bash
 $ docker run --rm fabianonunes/hub-ratelimit
