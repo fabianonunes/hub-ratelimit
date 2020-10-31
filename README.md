@@ -1,6 +1,6 @@
 # hub ratelimit
 
-> Atenção: as consultas de cotas não são gratuitas, cada 2 consultas consome o equivalente a 1 pull.
+> Atenção: as consultas de cotas não são gratuitas; cada 2 consultas consome o equivalente a 1 pull.
 
 Utilitário para consultar as cotas de uma conta e quantas ainda restam em uma determinada janela de tempo.
 
@@ -23,4 +23,11 @@ $ docker run --rm fabianonunes/hub-ratelimit usuario:senha
 < HTTP/1.1 200 OK
 < RateLimit-Limit: 200=21600
 < RateLimit-Remaining: 196;w=21600
+```
+
+Caso todo o limite tenha sido consumido pra respectiva janela de tempo, a seguinte mensagem será exibida:
+
+```bash
+$ docker run --rm fabianonunes/hub-ratelimit
+< HTTP/1.1 429 Too Many Requests
 ```
