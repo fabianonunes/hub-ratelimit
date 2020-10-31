@@ -9,4 +9,4 @@ url_pull="https://registry-1.docker.io/v2/${repo}/manifests/latest"
 bearer_token=$(curl ${auth:+--user "$auth"} -sL "${url_token}" | jq -r .token)
 auth_header="Authorization:Bearer ${bearer_token}"
 
-curl -sv -H "$auth_header" $url_pull 2>&1 | grep -E '< (HTTP|RateLimit)'
+curl -sv -H "${auth_header}" "${url_pull}" 2>&1 | grep -E '< (HTTP|RateLimit)'
