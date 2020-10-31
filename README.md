@@ -2,7 +2,7 @@
 
 ![Docker Image Version (latest by date)](https://img.shields.io/docker/v/fabianonunes/hub-ratelimit?color=success&label=docker%20image%20version)
 
-> Atenção: as consultas de cotas não são gratuitas; cada 2 consultas consome o equivalente a 1 pull.
+> Atenção: as consultas de cotas não são gratuitas; 2 consultas consomem o equivalente a 1 pull.
 
 Utilitário para consultar as cotas de uma conta e quantas ainda restam em uma determinada janela de tempo.
 
@@ -27,9 +27,20 @@ $ docker run --rm fabianonunes/hub-ratelimit usuario:senha
 < RateLimit-Remaining: 196;w=21600
 ```
 
+## Limite excedido
+
 Caso todo o limite tenha sido consumido dentro da respectiva janela de tempo, a seguinte mensagem será exibida:
 
 ```bash
 $ docker run --rm fabianonunes/hub-ratelimit
 < HTTP/1.1 429 Too Many Requests
+```
+
+## Crendenciais inválidas
+
+Caso as credenciais sejam inválidas, a seguinte mensagem será exibida:
+
+```bash
+$ docker run --rm fabianonunes/hub-ratelimit abc:123
+< HTTP/1.1 401 Unauthorized
 ```
