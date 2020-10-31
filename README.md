@@ -1,6 +1,6 @@
 # hub ratelimit
 
-![Docker Image Version (latest by date)](https://img.shields.io/docker/v/fabianonunes/hub-ratelimit?label=docker%20version)
+![Docker Image Version (latest by date)](https://img.shields.io/docker/v/fabianonunes/hub-ratelimit?color=success&label=docker%20image%20version)
 
 > Atenção: as consultas de cotas não são gratuitas; cada 2 consultas consome o equivalente a 1 pull.
 
