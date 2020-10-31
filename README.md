@@ -1,5 +1,7 @@
 # hub ratelimit
 
+![Docker Image Version (latest by date)](https://img.shields.io/docker/v/fabianonunes/hub-ratelimit)
+
 > Atenção: as consultas de cotas não são gratuitas; cada 2 consultas consome o equivalente a 1 pull.
 
 Utilitário para consultar as cotas de uma conta e quantas ainda restam em uma determinada janela de tempo.
