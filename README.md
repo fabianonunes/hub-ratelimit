@@ -13,8 +13,8 @@ $ docker run --rm fabianonunes/hub-ratelimit
 < RateLimit-Remaining: 89;w=21600
 ```
 
-No exemplo acima, o acesso anônimo possuem 100 cotas (`RateLimit-Limit`) para a janela de 21600s (6 horas).
-Dessas 100, restam apenas 89 (`RateLimit-Remaining`) .
+No exemplo acima, o acesso anônimo possui 100 cotas no total (`RateLimit-Limit`) para a janela de 21.600 segundos (6 horas).
+Dessas 100 cotas, restam apenas 89 (`RateLimit-Remaining`) .
 
 Para consultar a cota de uma conta específica, passe as credenciais como primeiro parâmetro no formato `user:senha`:
 
