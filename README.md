@@ -2,8 +2,6 @@
 
 ![Docker Image Version (latest by date)](https://img.shields.io/docker/v/fabianonunes/hub-ratelimit?color=success&label=docker%20image%20version)
 
-> Atenção: as consultas de cotas não são gratuitas; 2 consultas consomem o equivalente a 1 pull.
-
 Utilitário para consultar as cotas de uma conta e quantas ainda restam em uma determinada janela de tempo.
 
 Para consultar a cota anônima, que é limitada por IP, execute:
