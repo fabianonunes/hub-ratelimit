@@ -1,6 +1,6 @@
 # hub ratelimit
 
-![Docker Image Version (latest by date)](https://img.shields.io/docker/v/fabianonunes/hub-ratelimit?color=success&label=docker%20image%20version)
+![Docker Image Version (latest semver)](https://img.shields.io/docker/v/fabianonunes/hub-ratelimit?color=success&label=docker%20image%20version&sort=semver&style=flat-square)
 
 Utilitário para consultar as cotas de uma conta e quantas ainda restam em uma determinada janela de tempo.
 
