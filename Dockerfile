@@ -1,12 +1,6 @@
-FROM ubuntu:20.04
+FROM alpine:3.13
 
-RUN set -ex;                                    \
-    apt-get update;                             \
-    apt-get install -y --no-install-recommends  \
-      ca-certificates                           \
-      curl                                      \
-      jq;                                       \
-    rm -rf /var/lib/apt/lists/*;
+RUN apk add --no-cache curl jq;
 
 ADD entrypoint.sh .
 
